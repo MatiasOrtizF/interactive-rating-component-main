@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+
+--orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+
+--white: hsl(0, 0%, 100%);
+--lightGrey: hsl(217, 12%, 63%);
+--mediumGrey: hsl(216, 12%, 54%);
+--darkBlue: hsl(213, 19%, 18%);
+--veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryDarkBlue);
+    color: var(--lightGrey);
+    font-family: 'Overpass', sans-serif;
+}
+
+/* GLOBALES */
+h2 {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+p {
+    font-size: 13px;
+    line-height: 20px;
+}
+button {
+    background-color: var(--orange);
+    border: none;
+    color: var(--white);
+    width: 100%;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* CLASES */
+.atributte {
+    margin: 30px auto;
+    padding: 0px 30px;
+}
+.contenedor {
+    background-color: var(--darkBlue);
+    border-radius: 20px;
+    max-width: 350px;
+}
+.encuesta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+.fondo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px
+}
+.fondo a button {
+    border-radius: 50%;
+    background-color: var(--veryDarkBlue);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.fondo a button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+.fondo a button:focus {
+    background-color: var(--mediumGrey);
+    color: var(--white);
+}
+
+#enviar {
+    letter-spacing: 4px;
+}
+
+/* CLASES UNA VEZ ENVIADO */
+.post {
+    text-align: center;
+    padding: 30px 25px;
+}
+.post.hidden {
+    display: none;
+}
+.fondo-seleccion {
+    background-color: var(--veryDarkBlue);
+    border: none;
+    color: var(--white);
+    padding: 7px;
+    border-radius: 25px;
+    margin: 30px;
+}
+.fondo-seleccion p {
+    color: var(--orange);
+    font-size: 17px;
+}
